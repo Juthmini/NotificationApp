@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">TaskMate</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forget Password</string>
+    <string name="password">Password</string>
+    <string name="get_started">Get Started</string>
+    <string name="des">Boost your productivity with TaskMaster app features.</string>
+    <string name="name">TaskMaster</string>
+    <string name="taskmaster_productivity">TaskMaster Productivity</string>
+    <string name="new_user_sign_up_now">New user? Sign up now</string>
+    <string name="facebook">Facebook</string>
+    <string name="todo">TODO</string>
+    <string name="log_in">Log in</string>
+    <string name="username_example">username@example.com</string>
+    <string name="hint">************</string>
+    <string name="google">Google</string>=
+    <string name="save_task">Save Task</string>
+    <string name="back">Back</string>
+    <string name="task_title">Task Title</string>
+    <string name="description">Description</string>
+    <string name="date">dd/mm/yy</string>
+    <string name="priority">Priority</string>
+    <string name="set_reminder">Set Reminder</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="new_task">New Task</string>
+    <string name="task_icon">Task Icon</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="tasks">Tasks</string>
+    <string name="add_task">Add Task</string>
+    <string name="tasks_list">Tasks List</string>
+    <string name="stopwatch">Stopwatch</string>
+    <string name="time">00:00:00</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+    <string name="record_lap_time">Record Lap Time</string>
+    <string name="lap_times">Lap Times</string>
+    <string name="reminders">Reminders</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="cancel_alarm">Cancel Alarm</string>
+    <string name="edit_alarm">Edit Alarm</string>
+    <string name="no_alarm_set">No alarm set</string>
+    <string name="welcome">Get Started</string>
+    <string name="image_description">Description of the image</string>
+    <string name="title">Title</string>
+    <string name="message">Message\n</string>
+    <string name="schedule_notification">Set Reminder</string>
+
+
+</resources>

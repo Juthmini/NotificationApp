@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/newTask"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C1C"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:contentDescription="@string/back"
+        android:src="@drawable/back_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
+        app:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/taskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:background="@color/dark_gray"
+        android:padding="16dp"
+        android:text="@string/new_task"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <EditText
+        android:id="@+id/editTextTaskTitle"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@color/dark_gray"
+        android:hint="@string/task_title"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskTitle" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@color/dark_gray"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:textColor="@android:color/white"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTaskTitle" />
+
+    <EditText
+        android:id="@+id/editTextDueDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/dark_gray"
+        android:focusable="false"
+        android:hint="@string/date"
+        android:textColor="@android:color/white"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/priorityText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDescription" />
+
+
+    <TextView
+        android:id="@+id/priorityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/priority"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDueDate" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priorityText">
+
+        <RadioButton
+            android:id="@+id/radioLow"
+            android:layout_width="84dp"
+            android:layout_height="match_parent"
+            android:text="@string/low"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/radioMedium"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:text="@string/medium"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/radioHigh"
+            android:layout_width="86dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:text="@string/high"
+            android:textColor="@android:color/white" />
+    </RadioGroup>
+
+    <!-- Set Reminder Switch -->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupPriority">
+
+        <TextView
+            android:id="@+id/reminderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/set_reminder"
+            android:textColor="@android:color/white" />
+
+        <Switch
+            android:id="@+id/switchReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSaveTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="348dp"
+        android:backgroundTint="@color/light_yellow"
+        android:text="@string/save_task"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.657" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
